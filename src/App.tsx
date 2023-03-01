@@ -5,6 +5,7 @@ import Feed from "./components/Feed/Feed";
 import Widgets from "./components/Widgets/Widgets";
 import SideBar from "./components/SideBar/SideBar";
 import { UseContext } from "./useContext";
+import Register from "./Register";
 
 // const tweets = [
 //   {
@@ -27,6 +28,7 @@ function App() {
   return (
     <div className="App mx-auto lg:max-w-7xl grid grid-cols-10 gap-3 overflow-hidden">
       <UseContext.Provider value={tweets}>
+        {/* <Register /> */}
         <SideBar />
         <Feed onSumbit={getTweets} />
         <Widgets />

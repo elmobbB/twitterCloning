@@ -32,7 +32,11 @@ export default function TweetBox(props) {
     setTweetContent(e.target.value);
   }
 
-  const fileSelectedHandler = () => {};
+  const fileSelectedHandler = (e) => {
+
+
+    
+  };
   // const tweets = {
   //   tweetContent,
   // };
